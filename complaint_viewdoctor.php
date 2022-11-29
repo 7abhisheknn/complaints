@@ -732,7 +732,7 @@ echo "<script>alert('Saved Successfully!!');
             <h1>Patient Details</h1>
             <div id="view_table">
 
-                <table class="doct">
+                <table class="doct" style = "margin-left:auto;margin-right:auto;">
                     <tr>
                         <th class="doct">First Name</th>
                         <th class="doct">Last Name</th>
@@ -794,7 +794,8 @@ echo "<script>alert('Saved Successfully!!');
                                 value="save"></td>
                     </tr> -->
                 </table>
-                <input type="submit" name="submit1" value="save">
+                </div><div style="display: grid;height:25px;width: 50px;text-align:center;position:absolute;padding-left: 650px;">
+                <input type="submit" name = "submit1" class = "input button" value="save">
             </div>
         </form>
         <div class="side-menu">

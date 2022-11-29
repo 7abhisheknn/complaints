@@ -792,13 +792,14 @@ if (isset($_POST["submit1"])) {
                                 value="save"></td>
                     </tr> -->
                 </table>
-                <!-- <input type="submit" name="submit1" value="save"> -->
+                </div><div style="display: grid;height:25px;width: 50px;text-align:center;position:absolute;padding-left: 650px;">
+                <input type="submit" name = "submit1" class = "input button" value="save">
             </div>
             <div style="display: grid;height:25px;width: 50px;text-align:center;position:absolute;padding-left: 650px;">
                 <input type="submit" name = "submit1" class = "input button" value="save">
-                <!-- <input type="button" class="input button" value="Save"> -->
             </div>
         </form>
+        <!-- <input type="button" class="input button" value="Save"> -->
         <div class="side-menu">
             <div class="toggle-btn fas fa-chevron-left"></div>
             <a href="#">

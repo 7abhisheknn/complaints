@@ -140,19 +140,17 @@ echo "<script>alert('Saved Successfully!!');
         <?php include '../template/header.php'; ?>
 
         <form id="form1" class="form" action="" method="post">
-            <h1>Patient Details</h1>
+            <h1>All Complaints</h1>
             <div id="view_table">
 
-                <table class="doct">
+                <table class="doct" style = "margin-left:auto;margin-right:auto;">
                     <tr>
-                        <th class="doct">First Name</th>
-                        <th class="doct">Last Name</th>
-                        <th class="doct">Gender</th>
-                        <th class="doct">Mob No</th>
-                        <th class="doct">Email</th>
-                        <th class="doct">Address</th>
-                        <th class="doct">Username</th>
+                        <th class="doct">Department</th>
+                        <th class="doct">Location</th>
+                        <th class="doct">Date</th>
+                        <th class="doct">Description</th>
                         <th class="doct">Status</th>
+                        <th class="doct">Upvote</th>
                         <th class="doct">Edit</th>
                     </tr>
                     <?php
@@ -177,8 +175,6 @@ echo "<script>alert('Saved Successfully!!');
                     foreach ($attn as $attnd) {
                         echo "<tr>
                     <td class='doct'>" . $attnd["Department"] . "</td>
-                    <td class='doct'>" . $attnd["Username"] . "</td>
-                    <td class='doct'>" . $attnd["Doctor"] . "</td>
                     <td class='doct'>" . $attnd["Location"] . "</td>
                     <td class='doct'>" . $attnd["Date"] . "</td>
                     <td class='doct'>" . $attnd["Time"] . "</td>
@@ -204,7 +200,8 @@ echo "<script>alert('Saved Successfully!!');
                                 value="save"></td>
                     </tr> -->
                 </table>
-                <input type="submit" name="submit1" value="save">
+                </div><div style="display: grid;height:25px;width: 50px;text-align:center;position:absolute;padding-left: 650px;">
+                <input type="submit" name = "submit1" class = "input button" value="save">
             </div>
         </form>
         <div class="side-menu">

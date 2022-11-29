@@ -8,12 +8,12 @@ if ($conn->connect_error) {
 // echo "Connected successfully";
 if (isset($_POST["submit1"])) {
     $dep = $_POST['dep'];
-    $doct = $_POST['doct'];
+    // $doct = $_POST['doct'];
     $loc = $_POST['loc'];
     $date = $_POST['date'];
     $time = $_POST['time'];
     $puser=$_POST['puser'];
-    $query = "select * from complaint where Doctor='$doct' and  Location='$loc' and  Date='$date' and  Time='$time' ";
+    $query = "select * from complaint where  Location='$loc' and  Date='$date' and  Time='$time' ";
     $result = mysqli_query($conn, $query);
     $count = mysqli_num_rows($result);
     // $query3= "select MAX(SlNo) from complaint";
@@ -49,7 +49,7 @@ if (isset($_POST["submit1"])) {
     } else {
         // echo "Login unsucessful";
         // header('Location:unsuccessful.php');
-        $newuser = "INSERT INTO `complaint`(`Department`, `Doctor`, `Location`, `Date`, `Time`,`StudentUser`,`Status`) VALUES ('$dep','$doct','$loc','$date','$time','$puser','Pending')";
+        $newuser = "INSERT INTO `complaint`(`Department`, `Location`, `Date`, `Time`,`StudentUser`,`Status`) VALUES ('$dep','$loc','$date','$time','$puser','Pending')";
         if (mysqli_query($conn, $newuser)) {
 
             // header('Location:index.html');

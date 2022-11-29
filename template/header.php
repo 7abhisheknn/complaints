@@ -5,7 +5,7 @@
             <table>
                 <tr>
                     <td style="padding: 1em;" class="hover">
-                        <a href="#pname" style="text-decoration: none;">
+                        <a href="../about/About_Us_Page.html" style="text-decoration: none;">
                             <span class="align"><i class="fas fa-home home"></i> Home</span>
                         </a>
                     </td>
